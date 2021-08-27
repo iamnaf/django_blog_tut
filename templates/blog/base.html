@@ -8,7 +8,12 @@
     </head>
     <body>
         <header>
+        <div class="nav-left">
             <h1><a href="{% url 'home' %}">Django Blog</a></h1>
+        </div>
+        <div class="nav-right">
+            <h1><a href="{% url 'post_new' %}">Django Blog</a></h1>
+        </div>
         </header>
         <div>
             {% block content %}
